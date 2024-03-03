@@ -1,0 +1,623 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+ */
+
+
+/* all page  */
+
+.all_page{
+  background: url('/public/images/login_image.jpg');
+  background-size: cover;
+}
+
+
+/* navbar css */
+
+.navbar{
+  /* background:url('/public/images/login_image.jpg');
+  background-size: cover; */
+  /* color: white; */
+}
+
+.nav-item{
+  margin-left: 3vw;
+  font-size: 20px;
+  
+  
+  
+}
+
+.nav-item:hover{
+  translate: 2px 2px;
+  font-weight: bolder;
+}
+
+.nav-item:visited{
+  /* translate: 2px 2px; */
+  font-weight: bolder;
+}
+
+a.navbar-brand{
+  font-size: 30px;
+  /* font-weight: bold; */
+  margin-left: 10vw;
+  color: white;
+}
+
+a.navbar-brand:hover{
+  translate: 2px 2px;
+  font-weight: bolder;
+}
+
+
+
+
+/* home css */
+
+.image_home{
+  position: absolute;
+  left: 70vw;
+  top: 25vh;
+  height: 35vh;
+  border-radius: 1000px ;
+}
+
+.home_image{
+  /* background: transparent; */
+  border-radius: 22rem;
+  width: 25rem;
+  position: absolute;
+  top: 50rem;
+  right:10rem;
+
+  animation:home_animate 10s ease-in-out infinite;
+
+}
+
+/* @keyframes home_animate {
+  25%{
+    width: 30rem;
+  }
+  50%{
+    width: 25rem;
+  }
+  75%{
+    width: 30rem;
+  }
+} */
+
+@keyframes home_animate {
+  0%{
+    top: 30vh;
+    left: 60vw;
+  }
+  25%{
+    top: 50vh;
+    left: 60vw;
+  }
+  50%{
+    top: 50vh;
+    left: 72vw;
+  }
+  75%{
+    top: 30vh;
+    left: 72vw;
+  }
+  100%{
+    top: 30vh;
+    left: 60vw;
+
+  }
+}
+
+.home_name{
+  color: white;
+}
+
+.home_content{
+  color: yellow;
+  /* border: 2px solid white; */
+  margin-top: 20vh;
+  width: 40vw;
+  margin-left: 7rem;
+
+}
+
+.home_content h1{
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  /* margin: auto; */
+  /* margin-left: 3rem; */
+  justify-content: center;
+  text-align: center;
+}
+
+.home_content p{
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.home_content button{
+  /* background-color:blue; */
+  margin-left: 8rem;
+  margin-top: 2rem;
+}
+.home_page{
+  /* background: url('/public/images/login_image.jpg') ; */
+  /* background-size: cover; */
+  /* animation: animateBg1 5s linear infinite;*/
+  height: 90vh; 
+}
+
+.home_heading{
+  color: white;
+}
+
+
+/* login css  */
+.login_page{
+  /* height: 90.4vh;   */
+  height: 100vh;  
+  background: url('/public/images/login_image.jpg') no-repeat ;
+  background-size: cover;
+  background-position: center;
+  animation: animateBg 5s linear infinite;
+}
+
+@keyframes animateBg {
+  100%{
+    filter:hue-rotate(360deg);
+  }
+}
+
+.contact_form{
+  /* border: 2px solid red; */
+  /* background-color: red; */
+  /* background: url('/public/images/light-gradient1.avif'); */
+  width: 29vw;
+  border: 7px solid black;
+  margin: auto;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 10vh;
+  background: transparent;
+  backdrop-filter: blur(15px);
+}
+
+form .input_tags::placeholder{
+  font-weight: bolder;
+  color: white;
+
+}
+
+.contact_form input{
+  width: 20vw;
+  margin: auto;
+  background: transparent;
+  color: black;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  /* border: 2px solid black; */
+}
+
+.btn{
+  margin-left: 4vw;
+  width:20vw ;
+  /* color: green */
+}
+
+button.btn{
+  background-color:white;
+  color: black;
+  border-radius: 25px;
+  font-weight: bolder;
+  
+}
+
+
+
+
+.login_heading{
+  color:white;
+  margin-left:10rem;
+  margin-bottom:2rem;
+  font-weight:bolder;
+  border-bottom: 2px solid white;
+  width: 7rem;
+  
+}
+
+.remember{
+  color: white;
+  cursor: pointer;
+}
+.forgot_password{
+  color: white;
+  margin-left: 3.5rem;
+  cursor: pointer;
+}
+
+.forgot_password:hover{
+  transform: scale(1.2);
+}
+.login_create{
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}
+
+.login_create:hover{
+  transform: scale(1.1);
+}
+
+
+/* forgot password page  */
+
+.forgot_password_heading{
+  color:white;
+  margin-left:3.5rem;
+  margin-bottom:2rem;
+  font-weight:bolder;
+  width: 20rem;
+  border-bottom: 2px solid white;
+}
+
+
+
+
+/* register css */
+
+.register_page{
+  height: 100vh;  
+  background: url('/public/images/login_image.jpg') left top;
+  background-size: cover;
+}
+
+.register_heading{
+  color:white;
+  margin-left:8rem;
+  margin-bottom:2rem;
+  font-weight:bolder;
+  border-bottom: 2px solid white;
+  width: 10rem;
+}
+
+.register_create{
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}
+
+.register_create:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+/* card css */
+
+.dibba{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly ;
+  margin-top: 3rem;
+  gap: 5rem 1rem;
+  margin-bottom: 10rem;
+  
+}
+
+.card-text{
+  text-align:center;
+}
+
+.card_detail{
+  width: 19rem;
+  border:8px solid black;
+  border-radius: 15px;
+  /* padding: 8px; */
+  background-color: white;
+}
+
+.card-body{
+  /* background-color: aqua; */
+  /* margin: 2rem; */
+  /* padding: 2rem; */
+}
+
+.card_detail:hover{
+  translate: 5px 5px;
+  /* box-shadow:8px 8px 5px white ; */
+  box-shadow:10px 10px 5px white,-10px -10px 5px white ;
+}
+
+
+.card_page{
+  /* background-color: gray; */
+  background: url('/public/images/login_image.jpg') ;
+  background-size: contain;
+  animation: animateBg1 5s linear infinite;
+}
+
+
+@keyframes animateBg1 {
+  100%{
+    /* filter:hue-rotate(360deg); */
+  }
+}
+
+
+.card-img-top{
+  height:10rem;
+  padding:8px;
+  border-bottom:2px dashed black;
+ }
+
+
+
+.card-text{
+  font-weight: bolder;
+}
+.card-body a{
+   margin: 15px;
+   width:15rem;
+   margin-left:1.2rem;
+   margin-bottom:1rem
+
+}
+
+/* 
+@keyframes pop {
+   from {display: none;}
+   to{visibility: hidden;}
+}
+
+.pop_up{
+  width: 15rem;  
+  animation: pop 4s ease-in-out 2s ;
+} */
+
+
+
+
+
+/* cart css */
+
+@keyframes cart {
+    from{width: 2rem;top: 35vh;left: 15vw;}
+    to{width: 25rem;top: 30vh;left: 50vw;}
+}
+
+.cart_empty{
+  position: absolute;
+  /* top: 30vh;
+  left: 40vw; */
+  border-radius: 10000rem;
+
+  animation: cart 4s ease-in-out  infinite;
+  
+  
+}
+
+
+.cart_page{
+  /* background-color: red; */
+  /* background-color:gray; */
+  background: url('/public/images/login_image.jpg') ;
+  background-size: cover;
+  animation: animateBg1 5s linear infinite;
+  height: 100vh;
+}
+
+.cart_detail{
+  background-color: aqua;
+
+}
+
+.cart_delete_icon{
+  cursor: pointer;
+  margin-left: 2rem;
+  margin-right: 4rem;  
+}
+
+.cart_plus_icon{
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.cart_minus_icon{
+  cursor: pointer;
+}
+
+/* cursor: pointer; */
+
+
+/* footer css */
+
+/* .footer{
+  position: fixed;
+  bottom: 0 ;
+  top: 96vh;
+  left: 44vw;
+  font-weight: bold; 
+  
+} */
+.footer{
+  position:fixed;
+  bottom: 0 ;
+  font-weight: bold; 
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  
+} 
+
+
+/* about page */
+
+.about_page{
+  height: 90vh;
+}
+
+
+.about_img{
+  width: 25vw;
+  border-radius: 20px;
+  position: relative;
+  left: 65vw;
+  top: 20vh;
+  animation-name: samosa;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes samosa {
+  0%{
+    top: 10vh;
+    left: 65vw;
+  }
+  25%{
+    top: 10vh;
+    left: 74vw;
+  }
+  50%{
+    top: 30vh;
+    left: 74vw;
+  }
+  75%{
+    top: 30vh;
+    left: 65vw;
+  }
+  100%{
+    top: 10vh;
+    left: 65vw;
+
+  }
+
+}
+
+.about_heading{
+  /* margin: auto; */
+  position: relative;
+  top: 40vh;
+  margin-left: 10vw;
+  color: white;
+  /* left: 10vw;  */
+  /* right: 10vw; */
+}
+
+
+
+
+/* contact page  */
+
+.contact_page{
+  background: url('/public/images/login_image.jpg') ;
+  background-size: contain;
+  /* animation: animateBg1 5s linear infinite; */
+}
+
+.contact_container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  margin-top: 8vh;
+}
+
+.contact_container1{
+  width: 18vw;
+  text-align: center;
+  background-color: white;
+  /* background-color: whitesmoke; */
+  border: 2px solid white;
+  border-radius: 25px;
+  /* box-shadow: ; */
+  background: transparent;
+  backdrop-filter: blur(15rem);
+  color: white;
+
+}
+
+.contact_container2{
+  border: 2px solid red;
+  /* display: grid; */
+  /* margin: 5px; */
+  color: white;
+  width: 60vw;
+  margin-left: 20vw;
+  margin-top: 8vh;
+  background-color: whitesmoke;
+  border: 2px solid white;
+  border-radius: 25px;
+  background: transparent;
+  backdrop-filter: blur(15rem);
+
+  /* grid-template-columns: auto auto auto; */
+
+}
+
+.contact_container2 h1{
+  /* margin: auto; */
+  margin-left: 20vw;
+}
+
+.contact_container2 input{
+  margin: 2.5vw;
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  
+}
+
+.contact_container2 textarea{
+  margin-left: 10rem;
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+.contact_container2 textarea::placeholder{
+  color: white;
+}
+
+.contact_container2 button{
+  margin: 20px;
+  margin-left: 20vw;
+  width: 15vw;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+}
+
+
+
+
+
+
+/* create product  */
+
+.product_heading{
+  color:white;
+  margin-left:4.5rem;
+  margin-bottom:3rem;
+  font-weight:bolder;
+  width: 17rem;
+  border-bottom: 2px solid white;
+}
+
+
+
+
+/* media query code  */
+@media screen and (min-width:400px ){
+  body{
+    background-color: red;
+  }
+}
